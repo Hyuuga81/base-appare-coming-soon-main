@@ -8,12 +8,10 @@ theForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if (email.value.match(/^([a-z\d-\.]+)@([a-z]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/i)) {
         email.value = "";
-        email.classList.remove('surround');
         message.classList.add('hide');
         exclamation.classList.add('hide');
     } else {
         message.classList.remove('hide');
         exclamation.classList.remove('hide');
-        email.classList.add('surround');
     } 
 });

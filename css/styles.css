@@ -154,6 +154,10 @@ body {
     color: #F96464;
 }
 
+.fa-circle-exclamation.hide {
+    display: none;
+}
+
 
 /************************ DESKTOP STYLES ***********************/
 
@@ -237,10 +241,16 @@ body {
     }
 
     .fa-circle-exclamation {
+        top: 15px;
+        right: 120px;
+    }
+
+    .fa-circle-exclamation.hide {
         position: absolute;
         top: 15px;
         right: 120px;
         font-size: 1.7em;
         color: #F96464;
+        display: none;
     }
 }
