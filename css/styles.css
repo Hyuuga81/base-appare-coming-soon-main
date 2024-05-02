@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/************************ GENERAL STYLES *********************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 1em;
+}
+
+.container {
+    width: 82.9%;
+
+}
+
+.hide {
+    display: none;
+}
+
+/************************ TOP ***********************/
+
+.top {
+    width: 100%;
+}
+
+.logo-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.logo-top img {
+    width: 32.2%;
+    padding: 31px 0 32.11px 0;
+}
+
+.hero {
+    width: 100%;
+    background: url('../images/hero-mobile.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hero p {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/************************ BOTTOM ***********************/
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.logo-bottom {
+    display: none;
+}
+
+.bottom h1 {
+    font-size: 2.86em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 10.83px;
+    line-height: 42px;
+    margin: 64px 0 16px 0;
+}
+
+.bottom h1 span {
+    color: #CE9898;
+    font-weight: 300;
+}
+
+.bottom .copy {
+    color: #CE9898;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form-case {
+    width: 100%;
+    position: relative;
+}
+
+#email {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 0 9px 24px;
+    font-size: 1em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #CE9898;
+    line-height: 28px;
+    border: 1px solid #CE9898;
+    border-radius: 25px;
+}
+
+#email:focus {
+    outline: none;
+}
+
+.add {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 1em;
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 25px;
+    /* border: 1px solid linear-gradient(right, #f8bfbf, #ee8b8b); */
+    border-style: none;
+    background: linear-gradient(to right, #f8bfbf, #ee8b8b);
+}
+
+.add i {
+    font-size: 1.5em;
+}
+
+.add:focus {
+    outline: none;
+}
+
+.message {
+    color: #F96464;
+    position: absolute;
+    left: 24px;
+}
+
+.fa-circle-exclamation {
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    font-size: 1.7em;
+    color: #F96464;
+}
+
+
+/************************ DESKTOP STYLES ***********************/
+
+@media (min-width: 980px) {
+
+    body {
+        max-width: 1440px;
+        /* align-items: stretch; */
+        flex-direction: row-reverse;
+    }
+
+    .container {
+        width: 53.6%;
+    }
+
+    /************************ TOP ***********************/
+    .top {
+        width: 42.4%;
+        height: 100vh;
+    }
+
+    .logo-top {
+        display: none;
+    }
+
+    .hero {
+        background: url('../images/hero-desktop.jpg') no-repeat center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+
+    /************************ BOTTOM ***********************/
+
+    .bottom {
+        width: 57.6%;
+        height: 100vh;
+        align-items: flex-start;
+    }
+
+    .logo-bottom {
+        display: flex;
+        margin: 74px 0 0 0;
+    }
+
+    .bottom h1 {
+        font-size: 4.57em;
+        text-align: left;
+        font-weight: 600;
+        Letter-spacing: 17.32px;
+        line-height: 71px;
+        margin: 136px 0 32px 0;
+    }
+
+    .bottom .copy {
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
+    #email {
+        padding: 15px 0 13px 32px;
+        font-size: 1em;
+        font-family: "Josefin Sans", sans-serif;
+        color: #CE9898;
+        line-height: 28px;
+        border: 1px solid #CE9898;
+        border-radius: 30px;
+    }
+
+    .add {
+        top: 0;
+        right: 0;
+        font-size: 1em;
+        padding: 18px 43px;
+        border-radius: 30px;
+        background: linear-gradient(to right, #f8bfbf, #ee8b8b);
+    }
+
+    .fa-circle-exclamation {
+        position: absolute;
+        top: 15px;
+        right: 120px;
+        font-size: 1.7em;
+        color: #F96464;
+    }
+}
